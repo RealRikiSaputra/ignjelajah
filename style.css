@@ -371,18 +371,17 @@ section .title::after {
   padding: 5px 0;
 }
 
-.pricing-card button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+#selectPlanBtn {
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
-.pricing-card button:hover {
+#selectPlanBtn:hover {
   background-color: rgba(17, 123, 249, 255);
 }
 

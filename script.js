@@ -71,12 +71,6 @@ $(document).ready(function () {
     },
   });
 
-  document
-    .getElementById("selectPlanBtn")
-    .addEventListener("click", function () {
-      window.location.href = "#contact";
-    });
-
   var currentYearElement = document.getElementById("currentYear");
 
   var currentYear = new Date().getFullYear();
