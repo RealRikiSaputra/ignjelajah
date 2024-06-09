@@ -84,6 +84,11 @@ function submitForm() {
   var nik = document.getElementById("nik").value;
   var address = document.getElementById("address").value;
 
+  if (!name || !package || !nik || !address) {
+    alert("Silakan lengkapi semua kolom yang dibutuhkan.");
+    return;
+  }
+
   var message =
     "Halo IGN Jelajah, Saya ingin berlangganan dengan data di bawah:\n\n";
   message += "Nama: " + name + "\n";
