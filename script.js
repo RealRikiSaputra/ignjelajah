@@ -71,6 +71,23 @@ $(document).ready(function () {
     },
   });
 
+  const galleryContainer = $("#gallery-container");
+
+  // URL JSON online
+  const jsonUrl =
+    "https://json-6ecde-default-rtdb.firebaseio.com/IGN-Jelajah/gallery.json";
+
+  $.getJSON(jsonUrl, function (data) {
+    data.images.forEach(function (image) {
+      const cardElement = `
+                    <div class="gallery-item">
+                        <img src="${image.url}" alt="${image.alt}">
+                    </div>
+                `;
+      galleryContainer.append(cardElement);
+    });
+  });
+
   var currentYearElement = document.getElementById("currentYear");
 
   var currentYear = new Date().getFullYear();
