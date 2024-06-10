@@ -38,6 +38,7 @@ section {
 .about,
 .services,
 .price,
+.testimoni,
 .team,
 .contact,
 footer {
@@ -263,15 +264,18 @@ section .title::after {
 
 /* services section styling */
 .services,
+.testimoni,
 .team {
   color: #fff;
   background: #111;
 }
 .services .title::before,
+.testimoni .title::before,
 .team .title::before {
   background: #fff;
 }
 .services .title::after,
+.testimoni .title::after,
 .team .title::after {
   background: #111;
   content: "Services";
@@ -385,6 +389,73 @@ section .title::after {
   background-color: rgba(17, 123, 249, 255);
 }
 
+/* testimoni styling */
+.testimoni .title::after {
+  content: "Review";
+}
+.testimoni .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.testimoni .carousel .card:hover {
+  background: rgba(17, 123, 249, 255);
+}
+.testimoni .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.testimoni .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.testimoni .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.testimoni .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(17, 123, 249, 255);
+  transition: all 0.3s ease;
+}
+.testimoni .carousel .card:hover img {
+  border-color: #fff;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid rgba(17, 123, 249, 255) !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: rgba(17, 123, 249, 255) !important;
+}
+
+/* partner styling*/
+.partner .title::after {
+  content: "Partner";
+}
 /* team section styling */
 .team .title::after {
   content: "Team";
