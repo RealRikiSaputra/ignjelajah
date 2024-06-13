@@ -454,6 +454,9 @@ section .title::after {
 }
 
 /* Kemitraan section styling */
+.partnership .title::after {
+  content: "Mitra";
+}
 .partnership {
   background: #f9f9f9;
   padding: 80px 0;
@@ -729,6 +732,9 @@ footer span a:hover {
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
+  }
+  .partnership-content .point {
+    width: 100%;
   }
 }
 @media (max-width: 947px) {
