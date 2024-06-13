@@ -453,7 +453,7 @@ section .title::after {
   background: rgba(17, 123, 249, 255) !important;
 }
 
-/* Kemitraan section styling */
+/* kerjasama section styling */
 .partnership .title::after {
   content: "Mitra";
 }
@@ -481,23 +481,47 @@ section .title::after {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.partnership-content .point i {
-  font-size: 24px;
-  color: rgba(17, 123, 249, 255);
-  margin-right: 15px;
+.partnership-content .point h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000; /* Slight black stroke */
 }
 
-.partnership-content .point span {
-  font-size: 18px;
-  color: #333;
+.partnership-content .point p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000; /* Slight black stroke */
 }
 
-/* partner styling*/
-.partner .title::after {
-  content: "Partner";
+.partnership-content .point .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(17, 123, 249, 255);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #000; /* Slight black stroke */
+}
+
+.partnership-content .point.reseller {
+  background: url("images/kerjasama.jpg") no-repeat center;
+  color: white;
+}
+
+.partnership-content .point.franchise {
+  background: url("images/kerjasama.jpg") no-repeat center;
+  color: white;
+}
+
+/* Support styling*/
+.Support .title::after {
+  content: "Support";
 }
 /* team section styling */
 .team .title::after {
