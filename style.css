@@ -453,6 +453,45 @@ section .title::after {
   background: rgba(17, 123, 249, 255) !important;
 }
 
+/* Kemitraan section styling */
+.partnership {
+  background: #f9f9f9;
+  padding: 80px 0;
+}
+
+.partnership .title {
+  color: #111;
+}
+
+.partnership-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.partnership-content .point {
+  width: calc(50% - 20px);
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.partnership-content .point i {
+  font-size: 24px;
+  color: rgba(17, 123, 249, 255);
+  margin-right: 15px;
+}
+
+.partnership-content .point span {
+  font-size: 18px;
+  color: #333;
+}
+
 /* partner styling*/
 .partner .title::after {
   content: "Partner";
@@ -643,6 +682,26 @@ section .title::after {
 .right form .button-area button:hover {
   color: rgba(17, 123, 249, 255);
   background: none;
+}
+.follow-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #007bff;
 }
 /* footer section styling */
 footer {
